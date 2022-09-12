@@ -1,0 +1,83 @@
+.strip {
+    width: 7rem;
+    min-height: 70vh;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #009688;
+    backdrop-filter: blur(5px);
+    border-radius: 2rem;
+
+    z-index: -3;
+}
+
+
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+    background: #263238;
+    border-radius: 26% 26% 50% 50% / 26% 26% 74% 73%;
+    border: .3rem solid gray;
+    color: #009688;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 2rem 5rem;
+
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    width: 70%;
+    margin: 2rem auto 0;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    border: .2rem solid;
+    box-sizing: border-box;
+    padding:.5rem;
+   
+}
+#number{
+    margin: 0;
+}
+p{
+    font-size: 2rem;
+}
+.small_btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.click_btn{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 1.2rem;
+    height: 1.2rem;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.push_btn{
+    width: 4rem;
+    height: 4rem;
+}

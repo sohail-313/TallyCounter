@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="strip">
+
+    </div>
+    <div class="container">
+
+        <div class="shape">
+            <div class="display">
+                <p id="number">0</p>
+            </div>
+            <div class="small_btn">
+                <button class="reset_btn" onclick="clickedReset()"></button>
+            </div>
+            <div class="click_btn">
+                <button class="push_btn" onclick="clicked()"> </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = 0;
+        function clicked() {
+            x++;
+            document.getElementById("number").innerHTML = x;
+        }
+        function clickedReset() {
+            x = 0;
+            document.getElementById("number").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>
